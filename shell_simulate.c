@@ -1,4 +1,3 @@
-/// ex2b: Elchanan Sasson - 208272625
 /*
 This program simulates the "shell"(Terminal) + Prints details of each process.
  */
