@@ -1,7 +1,7 @@
 Authored by Elchanan Sasson
 
 ==Description==
-This program simulates the "shell"(Terminal) + pipe function(1 pipe/2 pipes) + signals Ctrl-z and 'fg'.
+This program simulates the "shell"(Terminal) + pipe function(up to two pipes) + signals Ctrl-z and 'fg'.
 
 functions:
 There are 5 main methods:
