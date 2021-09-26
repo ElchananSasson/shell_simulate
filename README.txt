@@ -1,27 +1,26 @@
 Authored by Elchanan Sasson
 
 ==Description==
-The program present a shell. The user insert command of his choice, and the program parses the string command to a process.
-(the program does not support cd command). In the end, the program prints statistic about the commands. For each command the program also prints the sched file of the process.
+This program simulates the "shell"(Terminal) + pipe function(1 pipe/2 pipes) + signals Ctrl-z and 'fg'.
 
 functions:
-There are six help methods:
-Function 1(printPrompt) - prints the prompt line.
-Function 2(printStatistic) - prints the statistics on the quantity and length of the commands entered.
-Function 3(numOfWords) - returns how many words there are in a sentence.
-Function 4(buildArr) - returns a two-dimensional array where each cell points to a word from the sentence entered by the user.
-Function 5(freeCommand) - free the array memory.
-Function 6(printSched) - prints information about the scheduler that runs the process.
+There are 5 main methods:
+Function 1(numOfWords) - This method returns how many words there are in a sentence.
+Function 2(buildArr) - This method returns a two-dimensional array where each cell points to a word from the sentence entered by the user.
+The method knows which part to cut according to the 'numOfPipes'.
+Function 3(doShell) - This method simulates the 'shell' by creating boys.
+Function 4(doExec) - This method sends the command to the operating system.
+Function 5(sig_handler) - This method receives signals and handles them individually.
 
 ==Program Files==
 shell_simulate.c
 
 ==How to compile?==
-compile: gcc shell_simulate.c -o shell
-run: ./shell
+compile: gcc shell_simulate.c -o shell_simulate
+run: ./shell_simulate
 
 ==Input:==
 A string that represents a command in 'shell'.
 
 ==Output:==
-Prints the information about the scheduler and then the entered command and at the end also statistics are printed on all the entered commands.
+Print the output of the command(the string that the user input) like what the 'shell' do.
