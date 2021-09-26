@@ -2,6 +2,7 @@ Authored by Elchanan Sasson
 
 ==Description==
 This program simulates the "shell"(Terminal) + pipe function(up to two pipes) + signals Ctrl-z and 'fg'.
+write 'done' to finish the program.
 
 functions:
 There are 5 main methods:
